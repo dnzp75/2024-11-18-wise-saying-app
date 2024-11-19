@@ -15,9 +15,9 @@ class App {
         System.out.println("== 명언 앱 ==");
         Scanner scanner = new Scanner(System.in);
 
-        while(true) {
-            int number=0;
+        int number=0;
 
+        while(true) {
             System.out.print("명령) ");
             String cmd = scanner.nextLine();
 
