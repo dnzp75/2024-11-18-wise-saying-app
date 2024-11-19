@@ -16,6 +16,8 @@ class App {
         Scanner scanner = new Scanner(System.in);
 
         while(true) {
+            int number=0;
+
             System.out.print("명령) ");
             String cmd = scanner.nextLine();
 
@@ -25,6 +27,10 @@ class App {
 
                 System.out.print("작가 : ");
                 scanner.nextLine();
+
+                number++;
+
+                System.out.println(number + "번 명언이 등록되었습니다.");
             }
 
             if(cmd.equals("종료")){
