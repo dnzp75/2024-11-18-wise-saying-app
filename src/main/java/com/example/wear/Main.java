@@ -50,23 +50,26 @@ class App {
             if (cmd.startsWith("삭제")) {
                 String[] parts = cmd.split("\\?");
                 int idToDelete = Integer.parseInt(parts[1].substring(3));
+                boolean deleted = false;
 
                 for (int i = 0; i < sayings.size(); i++) {
                     if (sayings.get(i).matchesId(idToDelete)) {
                         sayings.remove(i);
                         System.out.println(idToDelete + "번 명언이 삭제되었습니다.");
+                        deleted = true;
                         break;
                     }
+                }
+
+                if (!deleted) {
+                    System.out.println(idToDelete + "번 명언은 존재하지 않습니다.");
                 }
 
                 if (cmd.equals("종료")) {
                     break;
                 }
             }
-
-            scanner.close();
         }
-
     }
 }
 
