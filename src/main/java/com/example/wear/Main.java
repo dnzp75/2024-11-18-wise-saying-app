@@ -55,30 +55,4 @@ class App {
 
         scanner.close();
     }
-
-    private static class WiseSaying {
-        private int number;
-        private String content;
-        private String author;
-
-        public WiseSaying(int number, String content, String author) {
-            this.number = number;
-            this.content = content;
-            this.author = author;
-        }
-
-
-        public int getNumber() {
-            return number;
-        }
-
-        public String getContent() {
-            return content;
-        }
-
-        public String getAuthor() {
-            return author;
-        }
-
-    }
 }
