@@ -43,8 +43,7 @@ class App {
                 System.out.println("번호 / 작가 / 명언");
                 System.out.println("----------------------");
                 for (int i = sayings.size() - 1; i >= 0; i--) {
-                    WiseSaying saying = sayings.get(i);
-                    System.out.printf("%d / %s / %s\n", saying.getNumber(), saying.getAuthor(), saying.getContent());
+                    System.out.println(sayings.get(i).format());
                 }
             }
 
